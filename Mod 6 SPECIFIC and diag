@@ -1,0 +1,26 @@
+# Create the matrix
+my_matrix <- matrix(0, nrow = 5, ncol = 5)
+
+# Fill diagonal elements
+diag(my_matrix) <- 3
+
+# Fill non-diagonal elements
+for (i in 2:5) {
+  my_matrix[i, 1:i-1] <- 2
+}
+# Fill non-diagonal elements besides the 2 line
+for (i in 1:5) {
+  for (j in 2:5) {
+    if (i == 1) {
+      my_matrix[i, j] <-1
+    } else if (i == j) {
+      my_matrix[i, j] <- 3
+    } else if (j < i) {
+      my_matrix[i, j] <- 0 
+    }
+  }
+}
+
+# Print the matrix with proper formatting
+cat("## [,1] [,2] [,3] [,4] [,5]\n")
+print(my_matrix, quote = FALSE)
