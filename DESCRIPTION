@@ -1,0 +1,26 @@
+Package: TimeAnomalyDetect
+Title: Precise time series anomaly detection using tailored statistical techniques.
+Version: 0.0.0.9000
+Authors@R: 
+    person("Burak", "Cengiz", , "burakc@usf.edu", role = c("aut", "cre"),
+           comment = c(ORCID = "0009-0001-6685-4549"))
+Description: Provides a comprehensive set of algorithms and visualization tools 
+specifically designed for detecting anomalies in time series data. 
+It could include various statistical and machine learning techniques
+tailored for different types of time series data, 
+making it easier for analysts and data scientists 
+to identify unusual patterns and outliers.
+Depends:
+    R (>= 4.3.1),
+    stats
+Imports:
+    stats,
+    graphics,
+    utils,
+    ggplot2,
+    dplyr,
+    tidyr
+License: CCO
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
